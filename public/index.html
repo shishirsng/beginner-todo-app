@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Todo App</title>
+    <!-- Link to our CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>My Core Tasks</h1>
+            <p>What do you need to get done today?</p>
+        </header>
+
+        <main>
+            <!-- Form to add new tasks -->
+            <form id="todo-form">
+                <input type="text" id="todo-input" placeholder="e.g. Master Web Development" required autocomplete="off">
+                <button type="submit" id="add-btn">Add Task</button>
+            </form>
+
+            <!-- This is where JavaScript will inject our tasks dynamically! -->
+            <ul id="todo-list">
+                <!-- Our tasks load in here -->
+            </ul>
+        </main>
+    </div>
+
+    <!-- Link to our JavaScript logic file -->
+    <script src="script.js"></script>
+</body>
+</html>
